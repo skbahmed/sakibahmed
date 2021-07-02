@@ -98,10 +98,7 @@
         font-size: .8rem;
     }
     .filterItem img {
-        height: 4rem;
-    }
-    .filterItem h5 {
-        font-size: .8rem;
+        height: 6.5rem;
     }
     .connect h5 {
         font-size: 1.1rem;
@@ -133,9 +130,6 @@
 @media only screen and (max-width: 550px) {
     .filterBtn button {
         font-size: .6rem;
-    }
-    .filterItem img {
-        height: 3.5rem;
     }
 }
 

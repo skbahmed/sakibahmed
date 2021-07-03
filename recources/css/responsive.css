@@ -6,9 +6,6 @@
 } */
 
 @media only screen and (max-width: 1199px) {
-    .carousel-caption-detail {
-        padding-left: 20rem;
-    }
     .carousel-block img {
         height: 9rem;
     }
@@ -21,7 +18,7 @@
 }
 
 @media only screen and (max-width: 1040px) {
-    #myWorks .card {
+    .myWorks .card {
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
@@ -70,7 +67,7 @@
         top: 2.95rem;
         padding-top: 30%;
         padding-bottom: 30%;
-        background: rgba(0, 0, 0, 0.90);
+        background: rgb(52, 58, 64);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -161,7 +158,7 @@
 
 @media only screen and (max-width: 480px) {
     .navbar .nav {
-        width: 100%;
+        width: 110%;
     }
     .carousel-caption-detail h3 {
         font-size: 1rem;

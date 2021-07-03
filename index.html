@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <!-- BANGLA FONT -->
     <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
     <!-- JQUERY CSS FILE -->
@@ -26,20 +28,32 @@
     <!-- RECOURCES CSS FILE -->
     <link rel="stylesheet" href="recources/css/style.css">
     <link rel="stylesheet" href="recources/css/responsive.css">
+    <!-- FONTS FILE -->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Amerika';
+            src:url('vendors/fonts/amerika/Amerika.ttf.woff') format('woff'),
+                url('vendors/fonts/amerika/Amerika.ttf.svg#Amerika') format('svg'),
+                url('vendors/fonts/amerika/Amerika.ttf.eot'),
+                url('vendors/fonts/amerika/Amerika.ttf.eot?#iefix') format('embedded-opentype'); 
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <!-- SCROLL BAR HTML -->
     <div class="scroll-progress">
     <div class="scroll-progress-highlight" id="scroll-progress-js-highlight"></div>
     </div>
-    <div class="scroll-progress-container pt-1" id="scroll-progress-js-container">
+    <div class="scroll-progress-container" id="scroll-progress-js-container">
         <!-- NAVIGATION BAR HTML -->
         <nav class="navbar navbar-dark fixed-top">
             <div class="container container-fluid">
                 <span>
-                    <a href="#" class="navbar-brand logo"><img src="recources/img/logo.png" alt="SAKIB AHMED" class="navLogo"></a>
+                    <a href="" class="navbar-brand logo"><h1 class="navLogo">SAKIB <span>AHMED</span> </h1></a>
                 </span>
-                <ul class="nav justify-content-end nav-pills" style="font-size: .8rem;">
+                <ul class="nav nav-pills" style="font-size: .8rem;">
                     <li class="nav-item">
                         <a href="#home" class="nav-link active text-light">HOME</a>
                     </li>
@@ -53,7 +67,7 @@
                         <a href="#connect" class="nav-link text-light">CONNECT</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="" class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             ABOUT
                         </a>
                         <div class="dropdown-menu" style="background-color: black;" aria-labelledby="navbarDropdown">
@@ -72,11 +86,11 @@
             </div>
         </nav>
         <!-- HEADER SECTION HTML -->
-        <header class="pt-5 header" id="home">
+        <header class="header" id="home">
             <!-- HEADER PARTICLE EFFECT HTML -->
             <div id="particles-js"></div>
             <div class="container headerContainer text-white h-100">
-                <div class="heading w-100">
+                <div class="heading">
                     <!-- TYPE WRITER EFFECT HTML -->
                     <h1 class="py-5">
                         Hi, I am <span style="font-family: 'Dancing Script', cursive;" class="typewrite text-info" data-period="4000" data-type='[ "Sakib Ahmed.", "A Creative & Professional Web Designer...", "Expert in Web & App Development...", "Expert in Search Engine Optimization." ]'>

@@ -1,7 +1,11 @@
 /* -------------------- */
 /* BASIC SETUP */
 /* -------------------- */
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +13,7 @@ body {
   text-decoration: none;
   font-family: cursive;
   background-color: #020914;
+  overflow-x: hidden;
 }
 
 .opacity-0 {
@@ -101,7 +106,7 @@ section {
 
 .scroll-progress {
   height: 0.5rem;
-  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.2);
   width: 100%;
   position: fixed;
   top: 0;
@@ -118,20 +123,54 @@ section {
 .navbar {
   width: 100%;
   height: auto;
-  background: #000;
+  background: rgba(0, 0, 0, 0.90);
   z-index: 99999;
-  font-family: "Noto Sans JP", sans-serif !important;
-  letter-spacing: 0.15rem;
+  letter-spacing: .1rem;
+  font-weight: 500;
+  border-bottom: .05rem solid #333;
+  font-family: 'Poppins', sans-serif;
 }
 .navbar-brand {
   padding: 0;
   margin: 0;
 }
 .logo {
-  height: 2.5rem;
+  font-family: 'Amerika';
+  /* height: 2.5rem; */
 }
 .navLogo {
-  height: 100%;
+  font-size: 2rem;
+  margin: 0px!important;
+  color: rgb(228, 228, 228);
+}
+.navLogo span {
+  color: RGB(180, 0, 0);
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: 0.3s ease-in;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.burger {
+  display: none;
+}
+.mobileNav-active{
+  transform: translateX(0%)!important;
+}
+.mobileNav-active li{
+  opacity: 1!important;
+  transform: translate(0px)!important;
 }
 
 .header {
@@ -144,16 +183,6 @@ section {
   clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 50% 100%, 0% 88%);
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(226, 226, 226);
-  margin: 5px;
-}
-.burger {
-  display: none;
-}
-
 .headerContainer {
   pointer-events: none;
 }
@@ -161,6 +190,7 @@ section {
 .heading {
   text-align: center;
   position: absolute;
+  width: 90%;
   top: 50%;
   transform: translateY(-50%);
 }

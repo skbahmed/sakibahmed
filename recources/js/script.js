@@ -183,6 +183,20 @@ particlesJS('particles-js',
 );
 
 /* ------------------- */
+/* MOBILE NAV */
+/* ------------------- */
+const mobileNav = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav');
+  // activate mobile nav
+  burger.addEventListener('click',() => {
+    nav.classList.toggle('mobileNav-active');
+    burger.classList.toggle('toggle')
+  });
+}
+mobileNav();
+
+/* ------------------- */
 /* CAROUSEL SLIDER | TIMER */
 /* ------------------- */
 $('.carousel').carousel({

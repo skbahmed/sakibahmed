@@ -60,14 +60,33 @@
 }
 
 @media only screen and (max-width: 880px) {
-    .navbar .nav {
-        display: none;
+    .navbar {
+        height: 3.5rem;
+    }
+    .nav {
+        position: absolute;
+        right: -16px;
+        height: 94vh;
+        top: 2.95rem;
+        padding-top: 30%;
+        padding-bottom: 30%;
+        background: rgba(0, 0, 0, 0.90);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+        border-left: .05rem solid #333;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+    }
+    .nav li {
+        opacity: 0;
+        transition: 2s ease;
+        transform: translateX(200px);
     }
     .burger {
         display: block;
-    }
-    .header .w-100 {
-        width: 95%!important;
+        cursor: pointer;
     }
     .carousel-block {
         padding-top: 4rem;
@@ -113,6 +132,16 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .navLogo {
+        font-size: 1.5rem;
+    }
+    .navbar .nav {
+        top: 2.7rem;
+        height: 95vh;
+        width: 80%;
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
     .header {
         background-position: right;
     }
@@ -125,15 +154,15 @@
     .carousel-caption-detail p {
         font-size: .6rem;
     }
-}
-
-@media only screen and (max-width: 550px) {
     .filterBtn button {
         font-size: .6rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    .navbar .nav {
+        width: 100%;
+    }
     .carousel-caption-detail h3 {
         font-size: 1rem;
     }

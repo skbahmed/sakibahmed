@@ -1,10 +1,3 @@
-/* @media only screen and (max-width: 1300px) {
-    .navbar .nav {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-} */
-
 @media only screen and (max-width: 1199px) {
     .carousel-block img {
         height: 9rem;
@@ -14,13 +7,6 @@
     }
     .filterItem h5{
         font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 1040px) {
-    .myWorks .card {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
     }
 }
 
@@ -38,16 +24,6 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .carousel-block {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
-    .carousel-block img {
-        height: 7rem;
-    }
-    .carousel-caption-detail h3 {
-        font-size: 1.5rem;
-    }
     .filterItem img {
         height: 5rem;
     }
@@ -59,6 +35,9 @@
 @media only screen and (max-width: 880px) {
     .navbar {
         height: 3.5rem;
+    }
+    .navbar-brand {
+        padding: 0;
     }
     .nav {
         position: absolute;
@@ -85,36 +64,14 @@
         display: block;
         cursor: pointer;
     }
-    .carousel-block {
-        padding-top: 4rem;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    .carousel-block img {
-        height: 5rem;
-        padding: 0;
-        padding-left: 15%;
-    }
-    .carousel-caption-detail {
-        margin: 0;
-        padding: 0;
-        margin-left: 40%;
-    }
-    .carousel-caption-detail h3 {
-        font-size: 1.3rem;
-    }
-    .carousel-caption-detail p {
-        font-size: .8rem;
-    }
     #portfolio .hireMeBtn {
         display: none;
     }
     .filterBtn button {
         font-size: .8rem;
-    }
-    .filterItem img {
-        height: 6.5rem;
     }
     .connect h5 {
         font-size: 1.1rem;
@@ -143,30 +100,39 @@
         background-position: right;
     }
     .carousel-block img {
-        height: 4rem;
+        height: 7rem;
     }
     .carousel-caption-detail h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .carousel-caption-detail p {
-        font-size: .6rem;
+        font-size: .8rem;
     }
-    .filterBtn button {
-        font-size: .6rem;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .navbar .nav {
-        width: 110%;
-    }
-    .carousel-caption-detail h3 {
-        font-size: 1rem;
+    .filterItem img {
+        height: 6rem;
     }
     .filterBtn {
         display: block;
     }
     .filterBtn button {
         margin-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading h1 {
+        font-size: 2rem;
+    }
+    .navbar .nav {
+        width: 110%;
+    }
+    .carousel-block img {
+        height: 6rem;
+    }
+    .carousel-caption-detail h3 {
+        font-size: 1.1rem;
+    }
+    .carousel-caption-detail p {
+        font-size: .7rem;
     }
 }

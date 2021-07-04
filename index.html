@@ -19,10 +19,10 @@
     <!-- BANGLA FONT -->
     <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
     <!-- JQUERY CSS FILE -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-    <!-- SLICEBOX CSS FILE
-    <link rel="stylesheet" href="vendors/css/sliceboxDemo.css"> -->
     <!-- BOOTSTRAP CSS FILE -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- RECOURCES CSS FILE -->
@@ -41,7 +41,10 @@
         }
     </style>
 </head>
-<body>
+<body class="text-secondary">
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
     <!-- SCROLL BAR HTML -->
     <div class="scroll-progress">
     <div class="scroll-progress-highlight" id="scroll-progress-js-highlight"></div>
@@ -84,13 +87,13 @@
             <div class="container headerContainer text-white h-100">
                 <div class="heading">
                     <!-- TYPE WRITER EFFECT HTML -->
-                    <h1 class="py-5">
+                    <h1>
                         Hi, I am <span style="font-family: 'Dancing Script', cursive;" class="typewrite text-info" data-period="4000" data-type='[ "Sakib Ahmed.", "A Creative & Professional Web Designer...", "Expert in Web & App Development...", "Expert in Search Engine Optimization." ]'>
                             <span class="wrap"></span>
                         </span>
                     </h1>
                     <!-- HEADER HIRE ME BUTTON HTML -->
-                    <div class="mt-5 hireMeBtn">
+                    <div class="hireMeBtn">
                         <a href="#connect" class="btn btn-info px-5" role="button"> HIRE ME </a>
                     </div>
                 </div>
@@ -105,47 +108,40 @@
             <div class="container mt-5">
                 <!-- CAROUSEL SLIDER HTML -->
                 <div id="portfolioSlider" class="carousel slide pb-5" data-ride="carousel" style="cursor: default;">
-                    <ol class="carousel-indicators">
-                        <li class="active" data-target="#portfolioSlider" data-slide-to="0"></li>
-                        <li data-target="#portfolioSlider" data-slide-to="1"></li>
-                        <li data-target="#portfolioSlider" data-slide-to="2"></li>
-                        <li data-target="#portfolioSlider" data-slide-to="3"></li>
-                        <li data-target="#portfolioSlider" data-slide-to="4"></li>
-                    </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active carousel-block">
                             <img src="recources/img/responsiveDesign.png" class="d-block img-fluid" alt="Responsive Design">
                             <div class="carousel-caption carousel-caption-detail">
                                 <h3 class="text-info">Responsive Design</h3>
-                                <p class="text-secondary">Creative Responsive Design</p>
+                                <p>Creative Responsive Design</p>
                             </div>
                         </div>
                         <div class="carousel-item carousel-block">
                             <img src="recources/img/dynamicWebsite.png" class="d-block img-fluid" alt="Dynamic Website">
                             <div class="carousel-caption carousel-caption-detail">
                                 <h3 class="text-info">Dynamic Website</h3>
-                                <p class="text-secondary">Fast Dynamic Website</p>
+                                <p>Fast Dynamic Website</p>
                             </div>
                         </div>
                         <div class="carousel-item carousel-block">
                             <img src="recources/img/ecommerceWebsite.png" class="d-block img-fluid" alt="Ecommerce Website">
                             <div class="carousel-caption carousel-caption-detail">
                                 <h3 class="text-info">Ecommerce Website</h3>
-                                <p class="text-secondary">Professional Ecommerce Website</p>
+                                <p>Professional Ecommerce Website</p>
                             </div>
                         </div>
                         <div class="carousel-item carousel-block">
                             <img src="recources/img/portfolioWebsite.png" class="d-block img-fluid" alt="Portfolio Website">
                             <div class="carousel-caption carousel-caption-detail">
                                 <h3 class="text-info">Portfolio Website</h3>
-                                <p class="text-secondary">Attractive Portfolio Website</p>
+                                <p>Attractive Portfolio Website</p>
                             </div>
                         </div>
                         <div class="carousel-item carousel-block">
                             <img src="recources/img/appDevelopment.png" class="d-block img-fluid" alt="App Development">
                             <div class="carousel-caption carousel-caption-detail">
                                 <h3 class="text-info">App Development</h3>
-                                <p class="text-secondary">Android & ios App Development</p>
+                                <p>Android & ios App Development</p>
                             </div>
                         </div>
                     </div>
@@ -155,6 +151,13 @@
                     <a href="#portfolioSlider" class="carousel-control-next" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#portfolioSlider" data-slide-to="0"></li>
+                        <li data-target="#portfolioSlider" data-slide-to="1"></li>
+                        <li data-target="#portfolioSlider" data-slide-to="2"></li>
+                        <li data-target="#portfolioSlider" data-slide-to="3"></li>
+                        <li data-target="#portfolioSlider" data-slide-to="4"></li>
+                    </ol>
                 </div>
                 <!-- PORTFOLIO TOP HIRE ME BUTTON HTML -->
                 <div class="hireMeBtn">
@@ -180,51 +183,51 @@
                     <div class="row justify-content-center">
                         <div class="col-6 col-sm-4 col-md-3 mix responsiveDesign my-5 filterBlock" data-order="1">
                             <img src="recources/img/responsiveDesign.png" alt="Responsive Design">
-                            <h5 class="text-secondary mt-2">Responsive Design</h5>
+                            <h5 class="mt-2">Responsive Design</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix dynamicWebsite my-5 filterBlock" data-order="2">
                             <img src="recources/img/dynamicWebsite.png" alt="Dynamic Website">
-                            <h5 class="text-secondary mt-2">Dynamic Website</h5>
+                            <h5 class="mt-2">Dynamic Website</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix ecommerceWebsite my-5 filterBlock" data-order="3">
                             <img src="recources/img/ecommerceWebsite.png" alt="E-Commerce Website">
-                            <h5 class="text-secondary mt-2">E-Commerce Website</h5>
+                            <h5 class="mt-2">E-Commerce Website</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix portfolioWebsite my-5 filterBlock" data-order="5">
                             <img src="recources/img/portfolioWebsite.png" alt="Portfolio Website">
-                            <h5 class="text-secondary mt-2">Portfolio Website</h5>
+                            <h5 class="mt-2">Portfolio Website</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix ecommerceWebsite my-5 filterBlock" data-order="3">
                             <img src="recources/img/ecommerceWebsite.png" alt="E-Commerce Website">
-                            <h5 class="text-secondary mt-2">E-Commerce Website</h5>
+                            <h5 class="mt-2">E-Commerce Website</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix portfolioWebsite my-5 filterBlock" data-order="5">
                             <img src="recources/img/portfolioWebsite.png" alt="Portfolio Website">
-                            <h5 class="text-secondary mt-2">Portfolio Website</h5>
+                            <h5 class="mt-2">Portfolio Website</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix responsiveDesign my-5 filterBlock" data-order="1">
                             <img src="recources/img/responsiveDesign.png" alt="Responsive Design">
-                            <h5 class="text-secondary mt-2">Responsive Design</h5>
+                            <h5 class="mt-2">Responsive Design</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix appDevelopment my-5 filterBlock" data-order="4">
                             <img src="recources/img/appDevelopment.png" alt="App Development">
-                            <h5 class="text-secondary mt-2">App Development</h5>
+                            <h5 class="mt-2">App Development</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix ecommerceWebsite my-5 filterBlock" data-order="3">
                             <img src="recources/img/ecommerceWebsite.png" alt="E-Commerce Website">
-                            <h5 class="text-secondary mt-2">E-Commerce Website</h5>
+                            <h5 class="mt-2">E-Commerce Website</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix responsiveDesign my-5 filterBlock" data-order="1">
                             <img src="recources/img/responsiveDesign.png" alt="Responsive Design">
-                            <h5 class="text-secondary mt-2">Responsive Design</h5>
+                            <h5 class="mt-2">Responsive Design</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix appDevelopment my-5 filterBlock" data-order="4">
                             <img src="recources/img/appDevelopment.png" alt="App Development">
-                            <h5 class="text-secondary mt-2">App Development</h5>
+                            <h5 class="mt-2">App Development</h5>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 mix dynamicWebsite my-5 filterBlock" data-order="2">
                             <img src="recources/img/dynamicWebsite.png" alt="Dynamic Website">
-                            <h5 class="text-secondary mt-2">Dynamic Website</h5>
+                            <h5 class="mt-2">Dynamic Website</h5>
                         </div>
                     </div>
                 </div>
@@ -362,13 +365,13 @@
                 <h2 class="text-light">Let's Connect</h2>
                 <div class="row">
                     <div class="col-12 pt-5">
-                        <h5 class="text-secondary">Please Provide Your Information To Work Together</h5>
+                        <h5>Please Provide Your Information To Work Together</h5>
                     </div>
                     <!-- CLIENT INFORMATION SUBMITING FORM HTML -->
                     <div class="col-12 pt-5">
                         <div class="card userInformationCard py-2">
                             <div class="card-body">
-                                <div class="card-text text-left text-secondary">
+                                <div class="card-text text-left">
                                     <form action="">
                                         <div class="card-title text-center">
                                             <h5 class="text-info">Your Information</h5>
@@ -376,15 +379,15 @@
                                         <div class="row mb-3">
                                             <div class="form-group col-12 col-sm-6 col-md-4">
                                                 <label for="name">Full Name *</label>
-                                                <input type="text" class="form-control text-secondary" id="name" name="Name " placeholder="Enter Name" style="text-transform: capitalize;" required>
+                                                <input type="text" class="form-control" id="name" name="Name " placeholder="Enter Name" style="text-transform: capitalize;" required>
                                             </div>
                                             <div class="form-group col-12 col-sm-6 col-md-4">
                                                 <label for="contact">Contact Number *</label>
-                                                <input type="tel" class="form-control text-secondary" id="contact" name="Contact " minlength="10" placeholder="Enter skype/tel Number" required>
+                                                <input type="tel" class="form-control" id="contact" name="Contact " minlength="10" placeholder="Enter skype/tel Number" required>
                                             </div>
                                             <div class="form-group col-12 col-sm-12 col-md-4">
                                                 <label for="email">Email Address</label>
-                                                <input type="email" class="form-control text-secondary" id="email" name="Email " placeholder="Enter Email">
+                                                <input type="email" class="form-control" id="email" name="Email " placeholder="Enter Email">
                                             </div>
                                         </div>
                                         <div class="card-title text-center">
@@ -393,7 +396,7 @@
                                         <div class="row">
                                             <div class="form-group col-12 col-sm-6 col-md-4">
                                                 <label for="projectType">Project Type *</label>
-                                                <select class="form-control text-secondary" name="Project Type " id="projectType" required>
+                                                <select class="form-control" name="Project Type " id="projectType" required>
                                                     <option value="PSD Template">PSD Template</option>
                                                     <option value="PSD TO HTML">PSD to HTML</option>
                                                     <option value="WEB DESIGN">Web Design</option>
@@ -404,21 +407,21 @@
                                             </div>
                                             <div class="form-group col-12 col-sm-6 col-md-4">
                                                 <label for="deadline">Deadline *</label>
-                                                <input type="date" class="form-control text-secondary" id="deadline" name="Date ">
+                                                <input type="date" class="form-control" id="deadline" name="Date ">
                                             </div>
                                             <div class="form-group col-12 col-sm-12 col-md-4">
                                                 <label for="budget">Budget For This Project *</label>
-                                                <input type="number" class="form-control text-secondary" id="budget" name="Budget " min="500" placeholder="Not less than 500৳ (BDT)" required>
+                                                <input type="number" class="form-control" id="budget" name="Budget " min="500" placeholder="Not less than 500৳ (BDT)" required>
                                             </div>
                                             <div class="form-group col-12 col-sm-6" style="font-family: 'Kalpurush', Arial, sans-serif !important;">
                                                 <label for="description">Project Description</label>
-                                                <textarea name="Description " class="form-control text-secondary" id="description" rows="4" placeholder="Please describe the project....." style="height: 8.13rem;"></textarea>
+                                                <textarea name="Description " class="form-control" id="description" rows="4" placeholder="Please describe the project....." style="height: 8.13rem;"></textarea>
                                             </div>
                                             <div class="form-group col-12 col-sm-6">
                                                 <label for="attachFiles">Attach Files</label>
-                                                <input type="file" class="form-control text-secondary mb-2" id="attachFiles" name="File ">
-                                                <input type="file" class="form-control text-secondary mb-2" id="attachFiles" name="File ">
-                                                <input type="file" class="form-control text-secondary" id="attachFiles" name="File ">
+                                                <input type="file" class="form-control attachFiles mb-2" id="attachFiles" name="File ">
+                                                <input type="file" class="form-control attachFiles mb-2" id="attachFiles" name="File ">
+                                                <input type="file" class="form-control attachFiles" id="attachFiles" name="File ">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -460,124 +463,83 @@
                     <div class="col-12 col-md-6">
                         <h3 class="text-info text-right">Sakib Ahmed</h3>
                         <hr class="bg-info"/>
-                        <p class="text-secondary text-justify">I am here to grow up your business in professional way. More about 3 years I am with programming sector. I am expert in FRONTEND, BACKEND, ANDROID & IOS APPLICATION. I am also working on BUG FIXING & website SPEED OPTIMIZATION.</p>
-                        <p class="text-secondary text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris nunc, blandit eget dolor sit amet, elementum aliquam libero. Mauris aliquet nisl at magna dignissim finibus. Sed pulvinar a velit vitae commodo.</p>
+                        <p class="text-justify">I am here to grow up your business in professional way. More about 3 years I am with programming sector. I am expert in FRONTEND, BACKEND, ANDROID & IOS APPLICATION. I am also working on BUG FIXING & website SPEED OPTIMIZATION.</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris nunc, blandit eget dolor sit amet, elementum aliquam libero. Mauris aliquet nisl at magna dignissim finibus. Sed pulvinar a velit vitae commodo.</p>
                     </div>
                 </div>
             </div>
             <!-- CLIENTS REVIEWS PART HTML -->
-            <div class="container my-5">
+            <div class="container my-5 clientReviews">
                 <h3 style="font-family: 'Dancing Script', cursive;" class="text-light">Client's Reviews</h3>
-                <div class="pb-5">
-                    <!-- <div class="container-fluid">
-                        <div class="wrapper sliceboxSlider">
-                            <ul id="sb-slider" class="sb-slider col-md-offset-4">
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client1.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">John Smith</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client2.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">Richard Branson</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-secondary"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client3.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">Vandana Luthra</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client4.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">Andrew Carnegie</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-secondary"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client5.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">Chuck Feeney</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client6.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">Radhika Mallat</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-secondary"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="" class="clientPicture"><img src="recources/img/client7.jpg" alt="client picture"></a>
-                                    <div class="sb-description">
-                                        <h5>
-                                            <a href="#" class="text-secondary">Cheiko Asakawa</a> 
-                                            <br> 
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                            <i class="fas fa-star client-review-icon text-info"></i>
-                                        </h5>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div id="shadow" class="shadow"></div>
-                            <div id="nav-arrow" class="nav-arrow">
-                                <a href="">Next</a>
-                                <a href="">Previous</a>
+                <div class="card pb-5">
+                    <div class="row justify-content-center slickSlider px-5">
+                        <div class="col-3 testimonial">
+                            <i class="icon fas fa-comment-alt"></i>
+                            <p class="content text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti id explicabo voluptate, est numquam neque alias fugiat voluptatibus laborum eaque!</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="recources/img/client1.jpg" alt="John Smith">
+                                </div>
+                                <h5 class="title text-info">John Smith</h5>
+                                <span class="post">Fiverr</span>
                             </div>
                         </div>
-                    </div> -->
+                        <div class="col-3 testimonial">
+                            <i class="icon fas fa-comment-alt"></i>
+                            <p class="content text-justify">Ab ex perferendis dolores dolore at dolorum laudantium cupiditate nesciunt distinctio deleniti, voluptatum odio quasi. Debitis, distinctio! Corrupti id explicabo voluptate</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="recources/img/client2.jpg" alt="Richard Branson">
+                                </div>
+                                <h5 class="title text-info">Richard Branson</h5>
+                                <span class="post">Fiverr</span>
+                            </div>
+                        </div>
+                        <div class="col-3 testimonial">
+                            <i class="icon fas fa-comment-alt"></i>
+                            <p class="content text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium incidunt praesentium, natus sit sed.</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="recources/img/client3.jpg" alt="Vandana Luthra">
+                                </div>
+                                <h5 class="title text-info">Vandana Luthra</h5>
+                                <span class="post">Upwork</span>
+                            </div>
+                        </div>
+                        <div class="col-3 testimonial">
+                            <i class="icon fas fa-comment-alt"></i>
+                            <p class="content text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quo quas. Commodi autem, facilis neque maiores quisquam ex magnam. Voluptates ratione inventore vero.</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="recources/img/client4.jpg" alt="Andrew Carnegie">
+                                </div>
+                                <h5 class="title text-info">Andrew Carnegie</h5>
+                                <span class="post">Freelancer</span>
+                            </div>
+                        </div>
+                        <div class="col-3 testimonial">
+                            <i class="icon fas fa-comment-alt"></i>
+                            <p class="content text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe at modi alias nesciunt consequatur. Aut odio temporibus delectus, nesciunt officia quaerat aperiam?</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="recources/img/client5.jpg" alt="Chuck Feeney">
+                                </div>
+                                <h5 class="title text-info">Chuck Feeney</h5>
+                                <span class="post">Upwork</span>
+                            </div>
+                        </div>
+                        <div class="col-3 testimonial">
+                            <i class="icon fas fa-comment-alt"></i>
+                            <p class="content text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum doloribus ex itaque.</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="recources/img/client6.jpg" alt="Radhika Mallat">
+                                </div>
+                                <h5 class="title text-info">Radhika Mallat</h5>
+                                <span class="post">Fiverr</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- MY WORK PART HTML -->
@@ -591,8 +553,8 @@
                                 <img src="recources/img/work1.png" alt="Amazon">
                             </div>
                             <div class="content mt-2">
-                                <h5>Amazon</h5>
-                                <h6 class="text-secondary">www.amazon.com</h6>
+                                <h5 class="text-dark">Amazon</h5>
+                                <h6>www.amazon.com</h6>
                                 <a href="https://www.amazon.com/" class="btn btn-outline-dark mt-3" target="_blank">Visit Site</a>
                             </div>
                         </div>
@@ -601,8 +563,8 @@
                                 <img src="recources/img/work2.png" alt="Microsoft">
                             </div>
                             <div class="content mt-2">
-                                <h5>Microsoft</h5>
-                                <h6 class="text-secondary">www.microsoft.com</h6>
+                                <h5 class="text-dark">Microsoft</h5>
+                                <h6>www.microsoft.com</h6>
                                 <a href="https://www.microsoft.com/" class="btn btn-outline-dark mt-3" target="_blank">Visit Site</a>
                             </div>
                         </div>
@@ -611,8 +573,8 @@
                                 <img src="recources/img/work3.png" alt="Ali Express">
                             </div>
                             <div class="content mt-2">
-                                <h5>Ali Express</h5>
-                                <h6 class="text-secondary">www.aliexpress.com</h6>
+                                <h5 class="text-dark">Ali Express</h5>
+                                <h6>www.aliexpress.com</h6>
                                 <a href="https://www.aliexpress.com/" class="btn btn-outline-dark mt-3" target="_blank">Visit Site</a>
                             </div>
                         </div>
@@ -621,8 +583,8 @@
                                 <img src="recources/img/work4.png" alt="Amazon">
                             </div>
                             <div class="content mt-2">
-                                <h5>Apple</h5>
-                                <h6 class="text-secondary">www.apple.com</h6>
+                                <h5 class="text-dark">Apple</h5>
+                                <h6>www.apple.com</h6>
                                 <a href="https://www.apple.com/" class="btn btn-outline-dark mt-3" target="_blank">Visit Site</a>
                             </div>
                         </div>
@@ -631,8 +593,8 @@
                                 <img src="recources/img/work5.png" alt="Microsoft">
                             </div>
                             <div class="content mt-2">
-                                <h5>Forbes</h5>
-                                <h6 class="text-secondary">www.forbes.com</h6>
+                                <h5 class="text-dark">Forbes</h5>
+                                <h6>www.forbes.com</h6>
                                 <a href="https://www.forbes.com/" class="btn btn-outline-dark mt-3" target="_blank">Visit Site</a>
                             </div>
                         </div>
@@ -641,8 +603,8 @@
                                 <img src="recources/img/work2.png" alt="Ali Express">
                             </div>
                             <div class="content mt-2">
-                                <h5>Microsoft</h5>
-                                <h6 class="text-secondary">www.microsoft.com</h6>
+                                <h5 class="text-dark">Microsoft</h5>
+                                <h6>www.microsoft.com</h6>
                                 <a href="https://www.microsoft.com/" class="btn btn-outline-dark mt-3" target="_blank">Visit Site</a>
                             </div>
                         </div>
@@ -691,10 +653,10 @@
                             <h6 class="text-info text-left">Contact</h6>
                             <hr class="bg-info"/>
                             <ul style="list-style: none;" class="pl-0">
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="tel:8801869680796" target="_blank"><i class="fas fa-phone-alt mr-4"></i>+880 1869-680796</a></li>
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="https://wa.me/qr/FL2C45DMWIMGD1" target="_blank"><i class="fab fa-whatsapp mr-4"></i>+880 1869-680796</a><a class="text-primary text-decoration-none ml-2" href="recources/img/shared_qr_code.png" target="_blank">QR</a></li>
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="https://join.skype.com/invite/vD3VdV3rmPCI" target="_blank"><i class="fab fa-skype mr-4"></i>+880 1869-680796</a></li>
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="mailto:sakibrisa@gmail.com?subject=mailFromPortfolio" target="_blank"><i class="fas fa-envelope mr-4"></i>sakibrisa@gmail.com</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="tel:8801869680796" target="_blank"><i class="fas fa-phone-alt mr-4"></i>+880 1869-680796</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="https://wa.me/qr/FL2C45DMWIMGD1" target="_blank"><i class="fab fa-whatsapp mr-4"></i>+880 1869-680796</a><a class="text-success text-decoration-none ml-2" href="recources/img/shared_qr_code.png" target="_blank">QR</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="https://join.skype.com/invite/vD3VdV3rmPCI" target="_blank"><i class="fab fa-skype mr-4"></i>+880 1869-680796</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="mailto:sakibrisa@gmail.com?subject=mailFromPortfolio" target="_blank"><i class="fas fa-envelope mr-4"></i>sakibrisa@gmail.com</a></li>
                             </ul>
                         </div>
                         <!-- FOOTER FOLLOW ME HTML -->
@@ -702,11 +664,10 @@
                             <h6 class="text-info text-left">Follow Me</h6>
                             <hr class="bg-info"/>
                             <ul style="list-style: none;" class="pl-0">
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="" target="_blank"><i class="fas fa-user mr-4"></i>Sakib Ahmed</a></li>
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="https://www.facebook.com/skb552" target="_blank"><i class="fab fa-facebook-f mr-4"></i>Sakib Ahmed</a></li>
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="https://www.instagram.com/skb552/" target="_blank"><i class="fab fa-instagram mr-4"></i>Sakib Ahmed</a></li>
-                                <li class="text-secondary text-left py-2"><a class="text-secondary text-decoration-none" href="https://github.com/skbahmed" target="_blank"><i class="fab fa-github mr-4"></i>Sakib Ahmed</a></li>
-                                <li class="text-secondary text-left py-2"></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="" target="_blank"><i class="fas fa-user mr-4"></i>Sakib Ahmed</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="https://www.facebook.com/skb552" target="_blank"><i class="fab fa-facebook-f mr-4"></i>Sakib Ahmed</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="https://www.instagram.com/skb552/" target="_blank"><i class="fab fa-instagram mr-4"></i>Sakib Ahmed</a></li>
+                                <li class="text-left py-2"><a class="text-secondary text-decoration-none" href="https://github.com/skbahmed" target="_blank"><i class="fab fa-github mr-4"></i>Sakib Ahmed</a></li>
                             </ul>
                         </div>
                         <!-- FOOTER USED LANGUAGES HTML -->
@@ -714,39 +675,38 @@
                             <h6 class="text-info text-left">Used languages</h6>
                             <hr class="bg-info"/>
                             <ul style="list-style: none;" class="pl-0">
-                                <li class="text-secondary text-left py-2 d-flex"><i class="fab fa-html5 mr-4 mt-1"></i>
+                                <li class="text-left py-2 d-flex"><i class="fab fa-html5 mr-4 mt-1"></i>
                                     <div class="progress bg-dark mr-2 mt-1" style="width: 100%;">
                                         <div class="bg-info border-0 progress-bar-striped progress-bar-animated" style="width: 35%; margin-right: 1rem;;"></div>
                                     </div>
                                     35%
                                 </li>
-                                <li class="text-secondary text-left py-2 d-flex"><i class="fab fa-css3-alt mr-4 mt-1"></i>
+                                <li class="text-left py-2 d-flex"><i class="fab fa-css3-alt mr-4 mt-1"></i>
                                     <div class="progress bg-dark mr-2 mt-1" style="width: 100%;">
                                         <div class="bg-info border-0 progress-bar-striped progress-bar-animated" style="width: 15%; margin-right: 1rem;;"></div>
                                     </div>
                                     15%
                                 </li>
-                                <li class="text-secondary text-left py-2 d-flex"><i class="fab fa-bootstrap mr-4 mt-1"></i>
+                                <li class="text-left py-2 d-flex"><i class="fab fa-bootstrap mr-4 mt-1"></i>
                                     <div class="progress bg-dark mr-2 mt-1" style="width: 100%;">
                                         <div class="bg-info border-0 progress-bar-striped progress-bar-animated" style="width: 30%; margin-right: 1rem;;"></div>
                                     </div>
                                     30%
                                 </li>
-                                <li class="text-secondary text-left py-2 d-flex"><i class="fab fa-js mr-4 mt-1"></i>
+                                <li class="text-left py-2 d-flex"><i class="fab fa-js mr-4 mt-1"></i>
                                     <div class="progress bg-dark mr-2 mt-1" style="width: 100%;">
                                         <div class="bg-info border-0 progress-bar-striped progress-bar-animated" style="width: 20%; margin-right: 1rem;;"></div>
                                     </div>
                                     20%
                                 </li>
-                                <li class="text-secondary text-left py-2"></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- COPYRIGHT PART HTML -->
-            <div class="text-center py-3 bg-dark text-secondary">
-                © 2020 Copyright :
+            <div class="text-center py-3 bg-dark">
+                © 2021 Copyright :
                 <a class="text-secondary" href="" target="_blank">Sakib Ahmed</a>
             </div>
         </footer>
@@ -756,8 +716,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="vendors/js/headerParticles.min.js"></script>
     <script src="vendors/js/linearProgressBar.js"></script>
-    <script src="vendors/js/slicebox.min.js"></script>
-    <script src="vendors/js/slicebox.modernizr.custom.46884.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <!-- BOOTSTARP JS FILE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

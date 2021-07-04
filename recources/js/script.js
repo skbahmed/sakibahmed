@@ -1,4 +1,11 @@
 /* ------------------- */
+/* LOADER */
+/* ------------------- */
+setTimeout(function(){
+  $('.loader-bg').fadeToggle();
+}, 1500);
+
+/* ------------------- */
 /* SCROLL INDICATOR PROGRESS BAR */
 /* ------------------- */
 const container = document.getElementById('scroll-progress-js-container');

@@ -6,7 +6,7 @@
   z-index: 9999999999999;
   background-color: #020914;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .loader {
   border: 0 solid transparent;
@@ -633,6 +633,6 @@ svg.radial-progress text {
 
 .googleMap iframe {
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   border: none;
 }

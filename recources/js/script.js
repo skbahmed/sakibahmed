@@ -200,6 +200,15 @@ const mobileNav = () => {
     nav.classList.toggle('mobileNav-active');
     burger.classList.toggle('toggle')
   });
+  // remove mobile nav
+  const navItem = document.querySelectorAll('.nav-item');
+  var i;
+  for (i = 0; i < navItem.length; i++) {
+    navItem[i].addEventListener('click',() => {
+      nav.classList.remove('mobileNav-active');
+      burger.classList.remove('toggle');
+    });
+  }
 }
 mobileNav();
 

@@ -18,12 +18,6 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-    .header .hireMeBtn {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
     .filterItem img {
         height: 5rem;
     }
@@ -79,6 +73,7 @@
     .myPhotos {
         margin: auto;
         margin-bottom: 3rem;
+        overflow: hidden;
     }
     .myPicture {
         position: relative;
@@ -124,7 +119,7 @@
         font-size: 2rem;
     }
     .navbar .nav {
-        width: 110%;
+        width: 112%;
     }
     .carousel-block img {
         height: 6rem;
@@ -134,5 +129,44 @@
     }
     .carousel-caption-detail p {
         font-size: .7rem;
+    }
+    .filterBtn .btn {
+        width: 49%;
+        padding: .375rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .carousel-inner {
+        background: linear-gradient(to right, transparent,#020914ee, #020914ee, transparent), url(bg-img/carousel-bg.jpg) ;
+        background-size: 70vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .carousel-block img {
+        opacity: 0;
+    }
+    .carousel-caption {
+        left: 0;
+    }
+    .filterItem img {
+        height: 5rem;
+    }
+    .testimonial .content {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .navLogo {
+        font-size: 1.3rem;
+    }
+    .filterBtn .btn {
+        height: 3rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .filterItem img {
+        height: 4rem;
     }
 }

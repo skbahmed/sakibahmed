@@ -490,7 +490,7 @@ svg.radial-progress text {
 }
 .animated-box div:nth-child(7){
   top: 60%;
-  left: 80%;
+  left: 42%;
   animation: animatedBox 15s linear infinite;
 }
 .animated-box div:nth-child(8){
@@ -505,12 +505,12 @@ svg.radial-progress text {
 }
 .animated-box div:nth-child(10){
   top: 20%;
-  left: 80%;
+  left: 69%;
   animation: animatedBox 5s linear infinite;
 }
 .animated-box div:nth-child(11){
   top: 40%;
-  left: 95%;
+  left: 39%;
   animation: animatedBox 18s linear infinite;
 }
 .animated-box div:nth-child(12){
@@ -525,7 +525,7 @@ svg.radial-progress text {
 }
 .animated-box div:nth-child(14){
   top: 56%;
-  left: 71%;
+  left: 63%;
   animation: animatedBox 12s linear infinite;
 }
 .animated-box div:nth-child(15){

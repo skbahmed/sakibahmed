@@ -37,7 +37,7 @@
         position: absolute;
         right: -16px;
         height: 94vh;
-        top: 2.95rem;
+        top: 2.93rem;
         padding-top: 30%;
         padding-bottom: 30%;
         background: rgb(52, 58, 64);
@@ -61,7 +61,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    #portfolio .hireMeBtn {
+    .portfolio .hireMeBtn {
         display: none;
     }
     .filterBtn button {

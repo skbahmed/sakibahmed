@@ -126,6 +126,9 @@ section {
 .hireMeBtn {
   pointer-events: all;
 }
+.btn:focus {
+  box-shadow: none!important;
+}
 
 .downArrow {
   position: absolute;
@@ -182,6 +185,9 @@ section {
   letter-spacing: .1rem;
   font-weight: 500;
   border-bottom: .05rem solid #333;
+}
+.active {
+  transition: .5s ease-in;
 }
 .navbar-brand {
   padding: 0rem 1rem;
@@ -281,7 +287,7 @@ section {
   padding-right: 2rem;
 }
 
-.portfolioSlider-hireButton {
+.portfolio .hireMeBtn {
   float: right;
 }
 

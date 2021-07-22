@@ -47,7 +47,7 @@
         width: 60%;
         border-left: .05rem solid #333;
         transform: translateX(100%);
-        transition: 0.3s ease-in;
+        transition: 0.3s linear;
     }
     .nav li {
         opacity: 0;

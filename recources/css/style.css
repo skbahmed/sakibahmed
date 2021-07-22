@@ -68,7 +68,6 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent,rgb(255, 0, 200));
-  cursor: pointer;
 }
 
 .opacity-0 {
